@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(55, 40, 126);
+}
+
+
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(180, 180, 247, 0.774);
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.container::-webkit-scrollbar{
+    background-color: rgb(26, 26, 26);
+    width: 8px;
+}
+
+.container ::-webkit-scrollbar-thumb{
+    background-color: rgb(66, 66, 66);
+}
+
+.container::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    size: 10px;
+}
