@@ -6,32 +6,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    cuidado lucashgfhfhgfhgfh
     <div class="container">
 
-        <form action="">
+        <form action="" id="formulario">
 
+        <fieldset id="first">
             <label for="nome">Nome:</label> <br>
             <input type="text" id="nome" placeholder="Nome">
             <div class="erro" id="erroNome"></div>
-
+        </fieldset>
+        <fieldset>
             <label for="email">Email:</label> <br>
             <input type="email" id="email" placeholder="Email">
             <div class="erro" id="erroEmail"></div>
-
+        </fieldset>
+        <fieldset>
             <label for="cpf">CPF:</label> <br>
             <input type="number" id="cpf" placeholder="CPF">
             <div class="erro" id="erroCpf"></div>
+        </fieldset>
 
+        <fieldset>
             <label for="idade">Idade:</label> <br>
             <input type="number" id="idade" placeholder="Idade">
             <div class="erro" id="erroIdade"></div>
+        </fieldset>
 
+        <fieldset>
             <label for="cidade">Cidade</label> <br>
             <input type="text" id="cidade" placeholder="cidade">
             <div class="erro" id="erroCidade"></div>
+        </fieldset>
 
 
+        <fieldset>
             <label for="moradia">Tipo de moradia:</label> <br>
             
             <input type="radio" id="casa" name="moradia" value="casa">
@@ -39,39 +47,49 @@
 
             <input type="radio" id="ap" name="moradia" value="ap">
             <label for="casa">Apartamento</label> <br>
+        </fieldset>
+            
 
-
+        <fieldset>
             <label for="">Possui quintal?</label> <br>
 
-            <input type="radio" id="sim" name="quintal" value="possui">
-            <label for="sim">Sim</label> <br>
+            <input type="radio" id="simQuintal" name="quintal" value="possui">
+            <label for="simQuintal">Sim</label> <br>
 
-            <input type="radio" id="nao" name="Moradia" value="despossui">
-            <label for="nao">Não</label> <br>
+            <input type="radio" id="naoQuintal" name="Moradia" value="naoPossui">
+            <label for="naoQuintal">Não</label> <br>
+        </fieldset>
 
-            <label for=""></label>
-            <input type="text">
-            <div class="erro" id="erro"></div>
+        <fieldset>
+            <label for="">Ja teve pet?</label> <br>
 
-            <label for=""></label>
-            <input type="text">
-            <div class="erro" id="erro"></div>
+            <input type="radio" id="simPet" name="pet" value="teve">
+            <label for="simPet">Sim</label> <br>
 
-            <label for=""></label>
-            <input type="text">
-            <div class="erro" id="erro"></div>
+            <input type="radio" id="naoPet" name="pet" value="naoTeve">
+            <label for="naoPet">Não</label> <br>
+        </fieldset>
 
-            <label for=""></label>
-            <input type="text">
-            <div class="erro" id="erro"></div>
+        <fieldset>
+            <label for="tempo">Quanto tempo o animal ficara sozinho?</label> <br>
+            <input type="number" id="tempo" placeholder="Tempo:">
+            <div class="erro" id="errotempo"></div>
+        </fieldset>
 
-            <label for=""></label>
-            <input type="text">
-            <div class="erro" id="erro"></div>
+        <fieldset id="first">
+            <label for="motivo">Qual o motivo da adoção</label> <br>
+            <input type="text" id="motivo" placeholder="Motivo:">
+            <div class="erro" id="erroMotivo"></div>
+        </fieldset>
 
-            <label for=""></label>
-            <input type="text">
-            <div class="erro" id="erro"></div>
+        <fieldset id="first">
+            <label for="termo">Aceitar termos de uso</label> <br>
+            <input type="checkbox" id="termo">
+        </fieldset>
+
+        <fieldset>
+            <button id="enviar" type="submit">Enviar</button>
+        </fieldset>
 
         </form>
 
@@ -80,4 +98,5 @@
 
 
 </body>
+    <script src="script.js"></script>
 </html>

@@ -2,13 +2,20 @@ body{
     background-color: rgb(55, 40, 126);
 }
 
+fieldset{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.192);
+    padding: 0px, 106px;
+}
+
+
 .container{
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
     overflow-y: scroll;
-    width: 300px;
+    width: 400px;
     height: 500px;
     position: absolute;
     top:50%;
