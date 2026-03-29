@@ -19,7 +19,7 @@ form.addEventListener('submit', function(e){
     let pet = document.getElementsByName('pet').value;
     let tempo = document.getElementById('tempo').value;
     let motivo = document.getElementById('motivo').value;
-    let termos = document.getElementById('termo').checked;
+    let termo = document.getElementById('termo').checked;
 
     document.getElementById('erroNome').textContent = "";
     document.getElementById('erroEmail').textContent = "";
@@ -28,6 +28,12 @@ form.addEventListener('submit', function(e){
     document.getElementById('erroCidade').textContent = "";
     document.getElementById('erroTempo').textContent = "";
     document.getElementById('erroMotivo').textContent = "";
+    document.getElementById('erroTermo').textContent = "";
+
+    if(!termo){
+        document.getElementById('erroTermo').textContent = "Você precisa aceitar os termos."
+        valido = false;
+    }
 
     if(cidade.length < 1){
         document.getElementById('erroCidade').textContent = "Insira um nome de cidade."
