@@ -1,17 +1,23 @@
 body{
-    background-color: rgb(55, 40, 126);
+    background-image: url(assets/Background_image.png);
+    background-size: 100%;
+    background-position: -50%;
 }
 
 fieldset{
     border: none;
-    background-color: rgba(0, 0, 0, 0.192);
-    padding: 0px, 106px;
+}
+
+.erro{
+    font-size: 13px;
+    color: rgb(194, 55, 1);
+    font-weight: bold;
 }
 
 
 .container{
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
     overflow-y: scroll;
@@ -20,24 +26,26 @@ fieldset{
     position: absolute;
     top:50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(180, 180, 247, 0.774);
-    border-radius: 15px;
+    transform: translate(-50%, -40%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px 0px 0px 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 23px;
+    box-shadow: 7px 7px rgba(59, 59, 59, 0.712);
 }
-
 .container::-webkit-scrollbar{
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(255, 255, 255);
     width: 8px;
 }
-
 .container ::-webkit-scrollbar-thumb{
     background-color: rgb(66, 66, 66);
 }
-
 .container::-webkit-scrollbar-thumb{
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
+    background-color: rgb(255, 122, 183);
+    border-radius: 10px 0px 0px 10px;
     min-height: 10px;
+}
+
+input{
+    border: 0.7 solid black;
 }
