@@ -1,7 +1,7 @@
 body{
     background-image: url(assets/Background_image.png);
     background-size: 100%;
-    background-position: -50%;
+    background-position: -30%;
 }
 
 fieldset{
@@ -14,12 +14,13 @@ fieldset{
     font-weight: bold;
 }
 
-#divtitulo{
+#sectitulo{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    color: rgb(37, 0, 17);
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 .container{
     padding-top: 20px;
@@ -54,4 +55,18 @@ fieldset{
 
 input{
     border: 0.7 solid black;
+}
+
+#justificativa{
+    display: none;
+}
+#permiteAnimais{
+    display: none;
+}
+#quintalSeguro{
+    display: none;
+}
+.erroAparece{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 184, 157);
 }

@@ -15,7 +15,13 @@
 
     <div class="container">
 
+        
+
         <form action="" id="formulario">
+            
+        <div>
+            <p>Responda o formulário:</p>
+        </div>
 
             <fieldset id="first">
                 <label for="nome">Nome:</label> <br>
@@ -31,7 +37,7 @@
 
             <fieldset>
                 <label for="telefone">Telefone:</label> <br>
-                <input type="number" id="telefone" placeholder="+55...">
+                <input type="tel" id="telefone" placeholder="+55...">
                 <div class="erro" id="erroTelefone"></div>
             </fieldset>
 
@@ -64,7 +70,17 @@
                 <label for="casa">Apartamento</label> <br>
                 <div class="erro" id="erroMoradia"></div>
             </fieldset>
-                
+
+            <fieldset  class="erroAparece" id="permiteAnimais">
+                <label for="">O Apartamento permite animais?</label>
+
+                <input type="radio" name="permite" value="permite">
+                <label for="permite">Sim</label>
+
+                <input type="radio" name="permite" value="naoPermite">
+                <label for="permite">não</label>
+                <div class="erro" id="erroPermite"></div>
+            </fieldset>
 
             <fieldset>
                 <label for="quintal">Possui quintal?</label> <br>
@@ -76,7 +92,16 @@
                 <label for="naoQuintal">Não</label> <br>
                 <div class="erro" id="erroQuintal"></div>
             </fieldset>
+            <fieldset class="erroAparece" id="quintalSeguro">
+                <label for="quintal">O quintal é seguro?</label> <br>
 
+                <input type="radio" id="simseguro" name="seguro" value="seguro">
+                <label for="simseguro">Sim</label> <br>
+
+                <input type="radio" id="naoseguro" name="seguro" value="naoSeguro">
+                <label for="naoseguro">Não</label> <br>
+                <div class="erro" id="erroSeguro"></div>
+            </fieldset>
 
             <fieldset>
                 <label for="">Ja teve pet?</label> <br>
@@ -93,6 +118,12 @@
             <fieldset>
                 <label for="tempo">Quanto tempo o animal ficara sozinho?</label> <br>
                 <input type="number" id="tempo" placeholder="Tempo:">
+                <div class="erro" id="erroTempo"></div>
+            </fieldset>
+
+            <fieldset class="erroAparece" id="justificativa">
+                <label for="justifica">Justifique esse tempo:</label>
+                <input type="text" placeholder="trabalho..." id="justifica">
                 <div class="erro" id="erroTempo"></div>
             </fieldset>
 
