@@ -72,12 +72,12 @@ form.addEventListener('submit', function (e) {
     }
 
     if (!pet) {
-        naoPet.textContent = "Informe se voce ja teve um pet."
+        naoPet.textContent = "Informe se você ja teve um pet."
         valido = false;
     }
 
     if (!quintal) {
-        document.getElementById('erroQuintal').textContent = "selecione se voce tem quintal ou não."
+        document.getElementById('erroQuintal').textContent = "selecione se você tem quintal ou não."
         valido = false;
     }
 
@@ -102,7 +102,7 @@ form.addEventListener('submit', function (e) {
     }
 
     if (telefone.length < 8) {
-        document.getElementById('erroTelefone').textContent = "insira um numero valido.";
+        document.getElementById('erroTelefone').textContent = "insira um número valido.";
         valido = false;
     }
 
@@ -124,7 +124,7 @@ form.addEventListener('submit', function (e) {
     }
 
     if (idade > 120 || idade < 18) {
-        document.getElementById('erroIdade').textContent = "Insira um idade valida.";
+        document.getElementById('erroIdade').textContent = "Insira uma idade valida.";
         valido = false;
     }
 
