@@ -22,6 +22,11 @@ fieldset{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#formtitulo{
+    display: flex;;
+    justify-content: center;
+}
+
 .container{
     padding-top: 20px;
     padding-bottom: 40px;
@@ -65,6 +70,9 @@ input{
 }
 #quintalSeguro{
     display: none;
+}
+#possuirQuintal{
+    display: block;
 }
 .erroAparece{
     color: rgb(0, 0, 0);
