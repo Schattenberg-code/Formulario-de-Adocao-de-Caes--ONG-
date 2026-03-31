@@ -166,12 +166,13 @@ form.addEventListener('submit', function (e) {
             document.getElementById('erroQuintal').textContent = "";
             document.getElementById('erroSeguro').textContent = "";
             quintalSeguro.style.backgroundColor = "white";
-            valido = true;
-            } else {
+            } else if (seguro && seguro.value === "naoSeguro"){
                 document.getElementById('erroQuintal').textContent = "";
                 document.getElementById('erroSeguro').textContent = "Você não pode ter um animal!";
                 quintalSeguro.style.backgroundColor = "rgb(255, 184, 157)";
                 valido = false
+            } else {
+                document.getElementById('erroQuintal').textContent = "";
             }
     }else{
         document.getElementById('erroQuintal').textContent = "";
