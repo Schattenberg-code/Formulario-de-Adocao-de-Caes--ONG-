@@ -106,13 +106,18 @@ form.addEventListener('submit', function (e) {
         valido = false;
     }
 
-    if (!email.includes('@')) {
+    if(email.length < 1){
+        document.getElementById('erroEmail').textContent = "Insira um email";
+        valido = false;
+    } else if (!email.includes('@')) {
         document.getElementById('erroEmail').textContent = "Seu email precisa conter um '@'.";
         valido = false;
+    } else {
+        document.getElementById('erroEmail').textContent = "";
     }
 
     if (cpfvalidados.includes(cpf)) {
-        document.getElementById('erroCpf').textContent = "esse CPF já esta cadastrado.";
+        document.getElementById('erroCpf').textContent = "Esse CPF já esta cadastrado.";
     } else if (cpf.length < 14) {
         document.getElementById('erroCpf').textContent = "Seu Cpf é invalido.";
         valido = false;
@@ -131,7 +136,7 @@ form.addEventListener('submit', function (e) {
         document.getElementById('erroMotivo').textContent = "Adicione o motivo da adoção."
     }else{
         if (motivosinvalidos.includes(motivo.toLowerCase())) {
-                document.getElementById('erroMotivo').textContent = "meu deus cara pelamordedeus escreve algo certo";
+                document.getElementById('erroMotivo').textContent = "Insira um motivo valido...";
         }
     }
     
@@ -164,7 +169,7 @@ form.addEventListener('submit', function (e) {
             valido = true;
             } else {
                 document.getElementById('erroQuintal').textContent = "";
-                document.getElementById('erroSeguro').textContent = "problema voce não pdoe ter animais!!";
+                document.getElementById('erroSeguro').textContent = "Você não pode ter um animal!";
                 quintalSeguro.style.backgroundColor = "rgb(255, 184, 157)";
                 valido = false
             }
@@ -179,7 +184,7 @@ form.addEventListener('submit', function (e) {
         if (permite.value === "permite") {
             permiteAnimais.style.backgroundColor = "white";
         }else{
-                document.getElementById('erroPermite').textContent = "Você não pode ter animais";
+                document.getElementById('erroPermite').textContent = "Você não pode ter um animal!";
                 permiteAnimais.style.backgroundColor = "rgb(255, 184, 157)";
                 valido = false;
              }

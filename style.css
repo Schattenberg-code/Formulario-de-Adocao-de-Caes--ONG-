@@ -1,7 +1,8 @@
-body{
+body {
     background-image: url(assets/Background_image.png);
-    background-size: 100%;
-    background-position: -30%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 fieldset{
@@ -15,24 +16,42 @@ fieldset{
 }
 
 #sectitulo{
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-    color: rgb(37, 0, 17);
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 #formtitulo{
-    display: flex;;
+    display: flex;
     justify-content: center;
+    margin: 0 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    word-break: normal;
+    background-color: rgb(253, 121, 183);
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.3);
+}
+#formtitulo p{
+    margin: 10px 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+#titulo{
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .container{
+    position: relative;
     padding-top: 20px;
     padding-bottom: 40px;
     display: flex;
     justify-content: center;
-    overflow-y: scroll;
+    overflow-y: auto;
     width: 400px;
     height: 500px;
     position: absolute;
@@ -56,6 +75,37 @@ fieldset{
     background-color: rgb(255, 122, 183);
     border-radius: 10px 0px 0px 10px;
     min-height: 10px;
+}
+
+#botaostick {
+    position: sticky;
+    bottom: -41;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+#enviar{
+    padding: 6px 20px;
+    background-color: rgb(255, 122, 183);
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0.589);
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    box-shadow: 0 5px 0 rgba(59, 59, 59, 0.712);
+    transition: all 0.1s ease;
+}
+#enviar:hover{
+    cursor: pointer;
+    background-color: rgb(255, 137, 192);
+    color: rgb(255, 255, 255);
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 rgba(59, 59, 59, 0.712);
+    transition: all 0.1s ease;
+}
+#enviar:active{
+    background-color: rgb(253, 87, 164);
 }
 
 input{
